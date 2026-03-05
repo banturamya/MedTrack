@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Details - MedTrack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .container-detail {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .appointment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .doctor-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .doctor-avatar {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .doctor-details h3 {
+            color: #0d6efd;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .doctor-details p {
+            color: #6c757d;
+            margin: 3px 0;
+            font-size: 0.95rem;
+        }
+
+        .status-badge {
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .status-pending {
+            background: #fff3cd;
+            color: #664d03;
+        }
+
+        .status-completed {
+            background: #d1e7dd;
+            color: #0f5132;
+        }
+
+        .info-section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #0d6efd;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #0d6efd;
+        }
+
+        .info-label {
+            color: #6c757d;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .info-value {
+            color: #0d6efd;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .diagnosis-card {
+            background: linear-gradient(135deg, #d1e7dd 0%, #e7f5f0 100%);
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #198754;
+        }
+
+        .diagnosis-title {
+            color: #0f5132;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .diagnosis-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            border-left: 4px solid #198754;
+        }
+
+        .diagnosis-label {
+            color: #6c757d;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .diagnosis-value {
+            color: #0f5132;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .back-link {
+            color: #6c757d;
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .back-link:hover {
+            color: #0d6efd;
+        }
+
+        .alert {
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .appointment-header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark sticky-top">
+        <div class="container-lg">
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                <i class="bi bi-hospital"></i> MedTrack
+            </a>
+        </div>
+    </nav>
+
+    <!-- Detail Container -->
+    <div class="container-lg">
+        <div class="container-detail">
+            <!-- Back Link -->
+            <a href="{{ url_for('patient_dashboard') }}" class="back-link">
+                <i class="bi bi-arrow-left"></i> Back to Dashboard
+            </a>
+
+            <!-- Appointment Header -->
+            <div class="appointment-header">
+                <div class="doctor-card">
+                    <div class="doctor-avatar">
+                        {{ doctor.name[0] }}
+                    </div>
+                    <div class="doctor-details">
+                        <h3>Dr. {{ doctor.name }}</h3>
+                        <p><i class="bi bi-stethoscope"></i> {{ doctor.specialization or 'Specialist' }}</p>
+                        <p><i class="bi bi-calendar-event"></i> {{ doctor.experience or 'Experience' }}</p>
+                        <p><i class="bi bi-envelope"></i> {{ doctor.email }}</p>
+                    </div>
+                </div>
+                <span class="status-badge {% if appointment.status == 'Pending' %}status-pending{% else %}status-completed{% endif %}">
+                    {{ appointment.status }}
+                </span>
+            </div>
+
+            <!-- Appointment Info -->
+            <div class="info-section">
+                <h4 class="section-title"><i class="bi bi-calendar-check"></i> Appointment Information</h4>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label"><i class="bi bi-calendar"></i> Date</span>
+                        <span class="info-value">{{ appointment.appointment_date }}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label"><i class="bi bi-clock"></i> Time</span>
+                        <span class="info-value">{{ appointment.appointment_time }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chief Complaint -->
+            <div class="info-section">
+                <h4 class="section-title"><i class="bi bi-stethoscope"></i> Your Symptoms</h4>
+                <div class="info-item">
+                    <span class="info-label">What Brought You In?</span>
+                    <span class="info-value">{{ appointment.symptoms }}</span>
+                </div>
+            </div>
+
+            <!-- Consultation Results -->
+            {% if appointment.status == 'Completed' and appointment.diagnosis %}
+            <div class="info-section">
+                <h4 class="section-title"><i class="bi bi-check-circle-fill text-success"></i> Consultation Results</h4>
+
+                <div class="diagnosis-card">
+                    <h5 class="diagnosis-title"><i class="bi bi-file-earmark-medical"></i> Doctor's Findings</h5>
+
+                    <div class="diagnosis-item">
+                        <span class="diagnosis-label"><i class="bi bi-diagnose"></i> Diagnosis</span>
+                        <span class="diagnosis-value">{{ appointment.diagnosis }}</span>
+                    </div>
+
+                    <div class="diagnosis-item">
+                        <span class="diagnosis-label"><i class="bi bi-heart-pulse"></i> Treatment Plan</span>
+                        <span class="diagnosis-value">{{ appointment.treatment_plan }}</span>
+                    </div>
+
+                    <div class="diagnosis-item">
+                        <span class="diagnosis-label"><i class="bi bi-capsule"></i> Prescription</span>
+                        <span class="diagnosis-value">{{ appointment.prescription }}</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px; padding: 15px; background: #e7f5f0; border-radius: 8px; border-left: 4px solid #198754;">
+                    <p style="color: #0f5132; margin: 0;">
+                        <i class="bi bi-info-circle"></i> 
+                        <strong>Note:</strong> Please follow the treatment plan as prescribed by your doctor.
+                        If you have any questions, please contact the clinic.
+                    </p>
+                </div>
+            </div>
+            {% else %}
+            <!-- Pending Status -->
+            <div class="info-section">
+                <div style="padding: 20px; background: #fff3cd; border-radius: 8px; border-left: 4px solid #ffc107; text-align: center;">
+                    <i class="bi bi-hourglass-split" style="font-size: 2rem; color: #664d03; display: block; margin-bottom: 10px;"></i>
+                    <h5 style="color: #664d03; margin-bottom: 10px;">Appointment Pending</h5>
+                    <p style="color: #664d03; margin: 0;">
+                        Your appointment is pending. The doctor will submit their findings after the consultation.
+                    </p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
