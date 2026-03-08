@@ -14,6 +14,13 @@ from dotenv import load_dotenv
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from aws_services import (
+    load_runtime_data,
+    persist_appointment,
+    persist_notification,
+    persist_user,
+    publish_sns_notification,
+)
 
 # Load environment variables from .env file
 load_dotenv()
@@ -46,7 +53,7 @@ notifications_list = []
 users_database = {
     'DOC1': {
         'user_id': 'DOC1',
-        'name': 'Dr. Rajesh Kumar',
+        'name': 'Rajesh Kumar',
         'email': 'rajesh.kumar@medtrack.com',
         'password': generate_password_hash('password123'),
         'role': 'doctor',
@@ -59,15 +66,15 @@ users_database = {
     },
     'DOC2': {
         'user_id': 'DOC2',
-        'name': 'Dr. Priya Sharma',
-        'email': 'priya.sharma@medtrack.com',
+        'name': 'Nandini Sure',
+        'email': 'nandini.sure@medtrack.com',
         'password': generate_password_hash('password123'),
         'role': 'doctor',
         'specialization': 'Pediatrics',
         'experience': '8 years',
         'age': 38,
         'gender': 'Female',
-        'address': 'Health Center, Eastside',
+        'address': 'Shiva Nagar Hospital, Bidar',
         'phone': '9876543211'
     },
     'PAT1': {
@@ -139,6 +146,12 @@ appointments_database = {
     }
 }
 
+# Load persisted data when DynamoDB backend is enabled.
+users_database, appointments_database, notifications_list = load_runtime_data(
+    users_database,
+    appointments_database,
+)
+
 # ==================== UTILITY FUNCTIONS ====================
 
 def role_required(required_role):
@@ -184,6 +197,25 @@ def send_email_notification(recipient_email, subject, message_body):
     except Exception as e:
         logging.error(f"Failed to send email to {recipient_email}: {str(e)}")
         return False
+
+
+def send_sns_notification(subject, message_body):
+    """Publish notification message to configured SNS topic"""
+    return publish_sns_notification(subject, message_body)
+
+
+def record_notification(user_id, message, event_type="general"):
+    """Store notification in local runtime and DynamoDB when configured"""
+    notification = {
+        'notification_id': str(uuid.uuid4()),
+        'user_id': user_id,
+        'event_type': event_type,
+        'message': message,
+        'is_read': False,
+        'created_at': datetime.now().isoformat()
+    }
+    notifications_list.append(notification)
+    persist_notification(notification)
 
 
 def get_user_by_email(email):
@@ -266,6 +298,7 @@ def register():
         }
         
         users_database[user_id] = new_user
+        persist_user(new_user)
         logging.info(f"New user registered: {user_id} ({email})")
         
         flash(f"Registration successful! Your User ID: {user_id}. Please log in.", "success")
@@ -355,7 +388,8 @@ def patient_dashboard():
         user=user_data,
         appointments=user_appointments,
         stats=stats,
-        doctors=doctors_list
+        doctors=doctors_list,
+        users=users_database
     )
 
 
@@ -430,6 +464,7 @@ def book_appointment():
         }
         
         appointments_database[appointment_id] = new_appointment
+        persist_appointment(new_appointment)
         
         # Send notification email to doctor
         doctor_data = users_database[doctor_id]
@@ -446,6 +481,15 @@ def book_appointment():
         """
         
         send_email_notification(doctor_data['email'], email_subject, email_body)
+        send_sns_notification(
+            "MedTrack: New Appointment Request",
+            f"New appointment request from {patient_data['name']} with {doctor_data['name']} on {appointment_date} at {appointment_time}."
+        )
+        record_notification(
+            doctor_id,
+            f"New appointment request from {patient_data['name']} on {appointment_date} at {appointment_time}.",
+            "appointment_booked"
+        )
         
         logging.info(f"Appointment booked: {appointment_id} (Patient: {patient_data['name']}, Doctor: {doctor_data['name']})")
         flash("Appointment booked successfully!", "success")
@@ -502,6 +546,7 @@ def submit_diagnosis(appointment_id):
     appointment['treatment_plan'] = request.form.get('treatment_plan', '').strip()
     appointment['prescription'] = request.form.get('prescription', '').strip()
     appointment['status'] = 'Completed'
+    persist_appointment(appointment)
     
     # Send email to patient
     patient_data = users_database[appointment['patient_id']]
@@ -518,6 +563,15 @@ def submit_diagnosis(appointment_id):
     """
     
     send_email_notification(patient_data['email'], email_subject, email_body)
+    send_sns_notification(
+        "MedTrack: Consultation Completed",
+        f"Consultation completed for {patient_data['name']} by {doctor_data['name']} on {appointment['appointment_date']}."
+    )
+    record_notification(
+        appointment['patient_id'],
+        f"Your consultation with {doctor_data['name']} has been marked completed.",
+        "appointment_completed"
+    )
     
     logging.info(f"Diagnosis submitted for appointment {appointment_id}")
     flash("Diagnosis submitted successfully!", "success")
@@ -639,4 +693,7 @@ def internal_error(error):
 # ==================== MAIN ====================
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    debug_mode = os.getenv("FLASK_DEBUG", "1").strip().lower() in {"1", "true", "yes"}
+    app_host = os.getenv("FLASK_HOST", "0.0.0.0")
+    app_port = int(os.getenv("FLASK_PORT", "5000"))
+    app.run(debug=debug_mode, host=app_host, port=app_port)

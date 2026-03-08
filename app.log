@@ -1,0 +1,771 @@
+2026-03-05 22:06:56 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-05 22:06:56 INFO: [33mPress CTRL+C to quit[0m
+2026-03-05 22:06:56 INFO:  * Restarting with stat
+2026-03-05 22:06:57 WARNING:  * Debugger is active!
+2026-03-05 22:06:57 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:07:47 INFO: 127.0.0.1 - - [05/Mar/2026 22:07:47] "GET / HTTP/1.1" 200 -
+2026-03-05 22:07:47 INFO: 127.0.0.1 - - [05/Mar/2026 22:07:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-05 22:08:13 INFO: 127.0.0.1 - - [05/Mar/2026 22:08:13] "GET /register HTTP/1.1" 200 -
+2026-03-05 22:09:09 INFO: User registered: PAT4e960
+2026-03-05 22:09:09 INFO: 127.0.0.1 - - [05/Mar/2026 22:09:09] "[32mPOST /register HTTP/1.1[0m" 302 -
+2026-03-05 22:09:09 INFO: 127.0.0.1 - - [05/Mar/2026 22:09:09] "GET /login HTTP/1.1" 200 -
+2026-03-05 22:09:27 INFO: Login success: PAT4e960 as patient
+2026-03-05 22:09:27 INFO: 127.0.0.1 - - [05/Mar/2026 22:09:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 22:09:27 INFO: 127.0.0.1 - - [05/Mar/2026 22:09:27] "GET /patient_dashboard HTTP/1.1" 200 -
+2026-03-05 22:09:51 INFO: 127.0.0.1 - - [05/Mar/2026 22:09:51] "GET /book_appointment HTTP/1.1" 200 -
+2026-03-05 22:13:18 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:13:18 INFO:  * Restarting with stat
+2026-03-05 22:13:19 WARNING:  * Debugger is active!
+2026-03-05 22:13:19 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:13:52 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:13:52 INFO:  * Restarting with stat
+2026-03-05 22:13:53 WARNING:  * Debugger is active!
+2026-03-05 22:13:53 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:14:20 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:14:20 INFO:  * Restarting with stat
+2026-03-05 22:14:21 WARNING:  * Debugger is active!
+2026-03-05 22:14:21 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:14:33 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:14:33 INFO:  * Restarting with stat
+2026-03-05 22:14:34 WARNING:  * Debugger is active!
+2026-03-05 22:14:34 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:14:40 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:14:40 INFO:  * Restarting with stat
+2026-03-05 22:14:41 WARNING:  * Debugger is active!
+2026-03-05 22:14:41 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:14:42 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:14:42 INFO:  * Restarting with stat
+2026-03-05 22:14:43 WARNING:  * Debugger is active!
+2026-03-05 22:14:43 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:14:52 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:14:52 INFO:  * Restarting with stat
+2026-03-05 22:14:53 WARNING:  * Debugger is active!
+2026-03-05 22:14:53 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:15:13 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:15:13 INFO:  * Restarting with stat
+2026-03-05 22:15:14 WARNING:  * Debugger is active!
+2026-03-05 22:15:14 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:15:16 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:15:16 INFO:  * Restarting with stat
+2026-03-05 22:15:17 WARNING:  * Debugger is active!
+2026-03-05 22:15:17 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:15:19 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:15:19 INFO:  * Restarting with stat
+2026-03-05 22:15:20 WARNING:  * Debugger is active!
+2026-03-05 22:15:20 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:15:21 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:15:21 INFO:  * Restarting with stat
+2026-03-05 22:15:22 WARNING:  * Debugger is active!
+2026-03-05 22:15:22 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:15:23 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:15:23 INFO:  * Restarting with stat
+2026-03-05 22:15:24 WARNING:  * Debugger is active!
+2026-03-05 22:15:24 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:15:28 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:15:28 INFO:  * Restarting with stat
+2026-03-05 22:15:29 WARNING:  * Debugger is active!
+2026-03-05 22:15:29 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:15:33 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:15:33 INFO:  * Restarting with stat
+2026-03-05 22:15:34 WARNING:  * Debugger is active!
+2026-03-05 22:15:34 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:15:36 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:15:36 INFO:  * Restarting with stat
+2026-03-05 22:15:37 WARNING:  * Debugger is active!
+2026-03-05 22:15:37 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:15:41 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:15:41 INFO:  * Restarting with stat
+2026-03-05 22:15:42 WARNING:  * Debugger is active!
+2026-03-05 22:15:42 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:15:46 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:15:46 INFO:  * Restarting with stat
+2026-03-05 22:15:47 WARNING:  * Debugger is active!
+2026-03-05 22:15:47 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:15:55 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:15:55 INFO:  * Restarting with stat
+2026-03-05 22:15:56 WARNING:  * Debugger is active!
+2026-03-05 22:15:56 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:15:58 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:15:58 INFO:  * Restarting with stat
+2026-03-05 22:15:59 WARNING:  * Debugger is active!
+2026-03-05 22:15:59 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:16:01 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:16:01 INFO:  * Restarting with stat
+2026-03-05 22:16:02 WARNING:  * Debugger is active!
+2026-03-05 22:16:02 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:16:09 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:16:09 INFO:  * Restarting with stat
+2026-03-05 22:16:10 WARNING:  * Debugger is active!
+2026-03-05 22:16:10 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:16:12 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:16:12 INFO:  * Restarting with stat
+2026-03-05 22:16:13 WARNING:  * Debugger is active!
+2026-03-05 22:16:13 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:17:27 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:17:27 INFO:  * Restarting with stat
+2026-03-05 22:17:28 WARNING:  * Debugger is active!
+2026-03-05 22:17:28 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:17:40 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:17:40 INFO:  * Restarting with stat
+2026-03-05 22:17:41 WARNING:  * Debugger is active!
+2026-03-05 22:17:41 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:17:47 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:17:47 INFO:  * Restarting with stat
+2026-03-05 22:17:48 WARNING:  * Debugger is active!
+2026-03-05 22:17:48 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:17:50 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:17:50 INFO:  * Restarting with stat
+2026-03-05 22:17:51 WARNING:  * Debugger is active!
+2026-03-05 22:17:51 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:17:57 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:17:57 INFO:  * Restarting with stat
+2026-03-05 22:17:58 WARNING:  * Debugger is active!
+2026-03-05 22:17:58 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:18:08 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:18:08 INFO:  * Restarting with stat
+2026-03-05 22:18:09 WARNING:  * Debugger is active!
+2026-03-05 22:18:09 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:18:12 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:18:12 INFO:  * Restarting with stat
+2026-03-05 22:18:13 WARNING:  * Debugger is active!
+2026-03-05 22:18:13 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:18:15 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:18:15 INFO:  * Restarting with stat
+2026-03-05 22:18:16 WARNING:  * Debugger is active!
+2026-03-05 22:18:16 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:18:30 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:18:30 INFO:  * Restarting with stat
+2026-03-05 22:18:31 WARNING:  * Debugger is active!
+2026-03-05 22:18:31 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:18:37 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:18:37 INFO:  * Restarting with stat
+2026-03-05 22:18:38 WARNING:  * Debugger is active!
+2026-03-05 22:18:38 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:18:45 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:18:45 INFO:  * Restarting with stat
+2026-03-05 22:18:46 WARNING:  * Debugger is active!
+2026-03-05 22:18:46 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:19:06 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:19:06 INFO:  * Restarting with stat
+2026-03-05 22:19:06 WARNING:  * Debugger is active!
+2026-03-05 22:19:06 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:19:09 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:19:09 INFO:  * Restarting with stat
+2026-03-05 22:19:10 WARNING:  * Debugger is active!
+2026-03-05 22:19:10 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:19:11 INFO:  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\HealthCare\\app.py', reloading
+2026-03-05 22:19:11 INFO:  * Restarting with stat
+2026-03-05 22:19:12 WARNING:  * Debugger is active!
+2026-03-05 22:19:12 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 22:19:37 INFO: 127.0.0.1 - - [05/Mar/2026 22:19:37] "GET / HTTP/1.1" 200 -
+2026-03-05 22:19:40 INFO: 127.0.0.1 - - [05/Mar/2026 22:19:40] "GET /register HTTP/1.1" 200 -
+2026-03-05 22:21:00 INFO: User registered: DOC62cc5
+2026-03-05 22:21:00 INFO: 127.0.0.1 - - [05/Mar/2026 22:21:00] "[32mPOST /register HTTP/1.1[0m" 302 -
+2026-03-05 22:21:00 INFO: 127.0.0.1 - - [05/Mar/2026 22:21:00] "GET /login HTTP/1.1" 200 -
+2026-03-05 22:21:09 INFO: Login success: DOC62cc5 as doctor
+2026-03-05 22:21:09 INFO: 127.0.0.1 - - [05/Mar/2026 22:21:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 22:21:09 INFO: 127.0.0.1 - - [05/Mar/2026 22:21:09] "GET /doctor_dashboard HTTP/1.1" 200 -
+2026-03-05 22:21:49 INFO: 127.0.0.1 - - [05/Mar/2026 22:21:49] "GET /doctor_dashboard HTTP/1.1" 200 -
+2026-03-05 22:21:53 INFO: 127.0.0.1 - - [05/Mar/2026 22:21:53] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-05 22:21:53 INFO: 127.0.0.1 - - [05/Mar/2026 22:21:53] "GET / HTTP/1.1" 200 -
+2026-03-05 22:21:56 INFO: 127.0.0.1 - - [05/Mar/2026 22:21:56] "GET /login HTTP/1.1" 200 -
+2026-03-05 22:22:01 WARNING: Login failed for email: suremallikarjun2@gmail.com
+2026-03-05 22:22:01 INFO: 127.0.0.1 - - [05/Mar/2026 22:22:01] "POST /login HTTP/1.1" 200 -
+2026-03-05 22:22:13 WARNING: Login failed for email: suremallikarjun2@gmail.com
+2026-03-05 22:22:13 INFO: 127.0.0.1 - - [05/Mar/2026 22:22:13] "POST /login HTTP/1.1" 200 -
+2026-03-05 22:22:25 WARNING: Login failed for email: suremallikarjun2@gmail.com
+2026-03-05 22:22:25 INFO: 127.0.0.1 - - [05/Mar/2026 22:22:25] "POST /login HTTP/1.1" 200 -
+2026-03-05 22:22:30 INFO: 127.0.0.1 - - [05/Mar/2026 22:22:30] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-05 22:22:30 INFO: 127.0.0.1 - - [05/Mar/2026 22:22:30] "GET / HTTP/1.1" 200 -
+2026-03-05 22:22:32 INFO: 127.0.0.1 - - [05/Mar/2026 22:22:32] "GET /login HTTP/1.1" 200 -
+2026-03-05 22:22:37 WARNING: Login failed for email: suremallikarjun2@gmail.com
+2026-03-05 22:22:37 INFO: 127.0.0.1 - - [05/Mar/2026 22:22:37] "POST /login HTTP/1.1" 200 -
+2026-03-05 22:22:45 INFO: Login success: DOC62cc5 as doctor
+2026-03-05 22:22:45 INFO: 127.0.0.1 - - [05/Mar/2026 22:22:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 22:22:45 INFO: 127.0.0.1 - - [05/Mar/2026 22:22:45] "GET /doctor_dashboard HTTP/1.1" 200 -
+2026-03-05 22:22:51 INFO: 127.0.0.1 - - [05/Mar/2026 22:22:51] "GET /register HTTP/1.1" 200 -
+2026-03-05 22:23:18 INFO: User registered: PATc58d9
+2026-03-05 22:23:18 INFO: 127.0.0.1 - - [05/Mar/2026 22:23:18] "[32mPOST /register HTTP/1.1[0m" 302 -
+2026-03-05 22:23:18 INFO: 127.0.0.1 - - [05/Mar/2026 22:23:18] "GET /login HTTP/1.1" 200 -
+2026-03-05 22:23:24 INFO: Login success: PATc58d9 as patient
+2026-03-05 22:23:24 INFO: 127.0.0.1 - - [05/Mar/2026 22:23:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 22:23:24 INFO: 127.0.0.1 - - [05/Mar/2026 22:23:24] "GET /patient_dashboard HTTP/1.1" 200 -
+2026-03-05 22:23:27 INFO: 127.0.0.1 - - [05/Mar/2026 22:23:27] "GET /book_appointment HTTP/1.1" 200 -
+2026-03-05 22:25:13 ERROR: Email failed to send: (334, b'UGFzc3dvcmQ6')
+2026-03-05 22:25:13 INFO: Appointment booked: {'appointment_id': 'a9bb19c5', 'patient_id': 'PATc58d9', 'doctor_id': 'doc1', 'date': '2026-03-07', 'time': '10:30', 'symptoms': 'High Blood Pressure.', 'status': 'Pending', 'created_at': datetime.datetime(2026, 3, 5, 22, 25, 11, 419033)}
+2026-03-05 22:25:13 INFO: 127.0.0.1 - - [05/Mar/2026 22:25:13] "[32mPOST /book_appointment HTTP/1.1[0m" 302 -
+2026-03-05 22:25:13 INFO: 127.0.0.1 - - [05/Mar/2026 22:25:13] "GET /patient_dashboard HTTP/1.1" 200 -
+2026-03-05 22:25:19 INFO: 127.0.0.1 - - [05/Mar/2026 22:25:19] "GET /appointment_patient/a9bb19c5 HTTP/1.1" 200 -
+2026-03-05 22:25:30 INFO: 127.0.0.1 - - [05/Mar/2026 22:25:30] "GET /patient_dashboard HTTP/1.1" 200 -
+2026-03-05 22:25:49 INFO: 127.0.0.1 - - [05/Mar/2026 22:25:49] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-05 22:25:49 INFO: 127.0.0.1 - - [05/Mar/2026 22:25:49] "GET / HTTP/1.1" 200 -
+2026-03-05 22:25:58 INFO: 127.0.0.1 - - [05/Mar/2026 22:25:58] "GET /login HTTP/1.1" 200 -
+2026-03-05 22:26:41 WARNING: Login failed for email: nandini241@apklamp.com
+2026-03-05 22:26:41 INFO: 127.0.0.1 - - [05/Mar/2026 22:26:41] "POST /login HTTP/1.1" 200 -
+2026-03-05 22:27:22 INFO: Login success: doc1 as doctor
+2026-03-05 22:27:22 INFO: 127.0.0.1 - - [05/Mar/2026 22:27:22] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 22:27:22 INFO: 127.0.0.1 - - [05/Mar/2026 22:27:22] "GET /doctor_dashboard HTTP/1.1" 200 -
+2026-03-05 22:27:50 INFO: 127.0.0.1 - - [05/Mar/2026 22:27:50] "GET /appointment/appt1 HTTP/1.1" 200 -
+2026-03-05 22:29:43 INFO: 127.0.0.1 - - [05/Mar/2026 22:29:43] "[32mPOST /submit_diagnosis/appt1 HTTP/1.1[0m" 302 -
+2026-03-05 22:29:43 INFO: 127.0.0.1 - - [05/Mar/2026 22:29:43] "GET /doctor_dashboard HTTP/1.1" 200 -
+2026-03-05 22:29:59 INFO: 127.0.0.1 - - [05/Mar/2026 22:29:59] "GET /appointment/a9bb19c5 HTTP/1.1" 200 -
+2026-03-05 22:30:35 INFO: 127.0.0.1 - - [05/Mar/2026 22:30:35] "GET /appointment/appt4 HTTP/1.1" 200 -
+2026-03-05 22:31:40 INFO: 127.0.0.1 - - [05/Mar/2026 22:31:40] "[32mPOST /submit_diagnosis/appt4 HTTP/1.1[0m" 302 -
+2026-03-05 22:31:40 INFO: 127.0.0.1 - - [05/Mar/2026 22:31:40] "GET /doctor_dashboard HTTP/1.1" 200 -
+2026-03-05 22:31:59 INFO: 127.0.0.1 - - [05/Mar/2026 22:31:59] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-05 22:31:59 INFO: 127.0.0.1 - - [05/Mar/2026 22:31:59] "GET / HTTP/1.1" 200 -
+2026-03-05 22:32:00 INFO: 127.0.0.1 - - [05/Mar/2026 22:32:00] "GET /login HTTP/1.1" 200 -
+2026-03-05 22:32:34 INFO: Login success: doc2 as doctor
+2026-03-05 22:32:34 INFO: 127.0.0.1 - - [05/Mar/2026 22:32:34] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 22:32:34 INFO: 127.0.0.1 - - [05/Mar/2026 22:32:34] "GET /doctor_dashboard HTTP/1.1" 200 -
+2026-03-05 22:32:51 INFO: 127.0.0.1 - - [05/Mar/2026 22:32:51] "GET /appointment/appt5 HTTP/1.1" 200 -
+2026-03-05 22:34:00 INFO: 127.0.0.1 - - [05/Mar/2026 22:34:00] "[32mPOST /submit_diagnosis/appt5 HTTP/1.1[0m" 302 -
+2026-03-05 22:34:00 INFO: 127.0.0.1 - - [05/Mar/2026 22:34:00] "GET /doctor_dashboard HTTP/1.1" 200 -
+2026-03-05 22:34:05 INFO: 127.0.0.1 - - [05/Mar/2026 22:34:05] "GET /appointment/appt7 HTTP/1.1" 200 -
+2026-03-05 22:34:16 INFO: 127.0.0.1 - - [05/Mar/2026 22:34:16] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-05 22:34:16 INFO: 127.0.0.1 - - [05/Mar/2026 22:34:16] "GET / HTTP/1.1" 200 -
+2026-03-05 22:34:18 INFO: 127.0.0.1 - - [05/Mar/2026 22:34:18] "GET /login HTTP/1.1" 200 -
+2026-03-05 22:34:47 INFO: Login success: pat1 as patient
+2026-03-05 22:34:47 INFO: 127.0.0.1 - - [05/Mar/2026 22:34:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 22:34:47 INFO: 127.0.0.1 - - [05/Mar/2026 22:34:47] "GET /patient_dashboard HTTP/1.1" 200 -
+2026-03-05 22:34:51 INFO: 127.0.0.1 - - [05/Mar/2026 22:34:51] "GET /appointment_patient/appt1 HTTP/1.1" 200 -
+2026-03-05 22:34:55 INFO: 127.0.0.1 - - [05/Mar/2026 22:34:55] "GET /patient_dashboard HTTP/1.1" 200 -
+2026-03-05 22:35:02 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:02] "GET /appointment_patient/appt3 HTTP/1.1" 200 -
+2026-03-05 22:35:09 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:09] "GET /patient_dashboard HTTP/1.1" 200 -
+2026-03-05 22:35:11 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:11] "GET /appointment_patient/appt3 HTTP/1.1" 200 -
+2026-03-05 22:35:15 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:15] "GET /patient_dashboard HTTP/1.1" 200 -
+2026-03-05 22:35:19 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:19] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-05 22:35:19 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:19] "GET / HTTP/1.1" 200 -
+2026-03-05 22:35:24 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-05 22:35:24 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:24] "GET / HTTP/1.1" 200 -
+2026-03-05 22:35:26 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:26] "GET /login HTTP/1.1" 200 -
+2026-03-05 22:35:47 INFO: Login success: pat2 as patient
+2026-03-05 22:35:47 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 22:35:47 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:47] "GET /patient_dashboard HTTP/1.1" 200 -
+2026-03-05 22:35:51 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:51] "GET /appointment_patient/appt2 HTTP/1.1" 200 -
+2026-03-05 22:35:53 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:53] "GET /patient_dashboard HTTP/1.1" 200 -
+2026-03-05 22:35:55 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:55] "GET /appointment_patient/appt4 HTTP/1.1" 200 -
+2026-03-05 22:35:56 INFO: 127.0.0.1 - - [05/Mar/2026 22:35:56] "GET /patient_dashboard HTTP/1.1" 200 -
+2026-03-05 22:36:15 INFO: 127.0.0.1 - - [05/Mar/2026 22:36:15] "GET /book_appointment HTTP/1.1" 200 -
+2026-03-05 22:36:32 INFO: 127.0.0.1 - - [05/Mar/2026 22:36:32] "GET /register HTTP/1.1" 200 -
+2026-03-05 23:06:21 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-05 23:06:21 INFO: [33mPress CTRL+C to quit[0m
+2026-03-05 23:06:21 INFO:  * Restarting with stat
+2026-03-05 23:06:23 WARNING:  * Debugger is active!
+2026-03-05 23:06:23 INFO:  * Debugger PIN: 679-792-121
+2026-03-05 23:06:29 INFO: 127.0.0.1 - - [05/Mar/2026 23:06:29] "GET / HTTP/1.1" 200 -
+2026-03-05 23:06:32 INFO: 127.0.0.1 - - [05/Mar/2026 23:06:32] "GET /login HTTP/1.1" 200 -
+2026-03-05 23:41:26 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-05 23:41:26 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-05 23:41:26 - INFO -  * Restarting with stat
+2026-03-05 23:41:28 - WARNING -  * Debugger is active!
+2026-03-05 23:41:28 - INFO -  * Debugger PIN: 142-506-240
+2026-03-05 23:41:36 - INFO - 127.0.0.1 - - [05/Mar/2026 23:41:36] "GET / HTTP/1.1" 200 -
+2026-03-05 23:42:00 - INFO - 127.0.0.1 - - [05/Mar/2026 23:42:00] "GET /login HTTP/1.1" 200 -
+2026-03-05 23:42:11 - WARNING - Failed login attempt for email: shruti3888@btcours.com
+2026-03-05 23:42:11 - INFO - 127.0.0.1 - - [05/Mar/2026 23:42:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 23:42:11 - INFO - 127.0.0.1 - - [05/Mar/2026 23:42:11] "GET /login HTTP/1.1" 200 -
+2026-03-05 23:42:16 - INFO - 127.0.0.1 - - [05/Mar/2026 23:42:16] "GET /login HTTP/1.1" 200 -
+2026-03-05 23:43:18 - INFO -  * Detected change in 'C:\\Users\\pavit\\Desktop\\HealthCare\\HealthCare\\app.py', reloading
+2026-03-05 23:43:18 - INFO -  * Restarting with stat
+2026-03-05 23:43:20 - WARNING -  * Debugger is active!
+2026-03-05 23:43:20 - INFO -  * Debugger PIN: 142-506-240
+2026-03-05 23:43:23 - INFO -  * Detected change in 'C:\\Users\\pavit\\Desktop\\HealthCare\\HealthCare\\app.py', reloading
+2026-03-05 23:43:23 - INFO -  * Restarting with stat
+2026-03-05 23:43:25 - WARNING -  * Debugger is active!
+2026-03-05 23:43:25 - INFO -  * Debugger PIN: 142-506-240
+2026-03-05 23:43:26 - INFO -  * Detected change in 'C:\\Users\\pavit\\Desktop\\HealthCare\\HealthCare\\app.py', reloading
+2026-03-05 23:43:26 - INFO -  * Restarting with stat
+2026-03-05 23:43:29 - WARNING -  * Debugger is active!
+2026-03-05 23:43:29 - INFO -  * Debugger PIN: 142-506-240
+2026-03-05 23:43:37 - INFO -  * Detected change in 'C:\\Users\\pavit\\Desktop\\HealthCare\\HealthCare\\app.py', reloading
+2026-03-05 23:43:38 - INFO -  * Restarting with stat
+2026-03-05 23:43:40 - WARNING -  * Debugger is active!
+2026-03-05 23:43:40 - INFO -  * Debugger PIN: 142-506-240
+2026-03-05 23:43:48 - INFO - 127.0.0.1 - - [05/Mar/2026 23:43:48] "GET /login HTTP/1.1" 200 -
+2026-03-05 23:45:28 - INFO - User logged in: DOC2 (nandini.sure@medtrack.com)
+2026-03-05 23:45:28 - INFO - 127.0.0.1 - - [05/Mar/2026 23:45:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 23:45:28 - INFO - 127.0.0.1 - - [05/Mar/2026 23:45:28] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-05 23:45:35 - INFO - 127.0.0.1 - - [05/Mar/2026 23:45:35] "GET /profile/doctor HTTP/1.1" 200 -
+2026-03-05 23:45:54 - INFO - 127.0.0.1 - - [05/Mar/2026 23:45:54] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-05 23:45:56 - INFO - 127.0.0.1 - - [05/Mar/2026 23:45:56] "GET /appointment/APT002/view HTTP/1.1" 200 -
+2026-03-05 23:46:09 - INFO - 127.0.0.1 - - [05/Mar/2026 23:46:09] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-05 23:46:29 - INFO - 127.0.0.1 - - [05/Mar/2026 23:46:29] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-05 23:46:33 - INFO - 127.0.0.1 - - [05/Mar/2026 23:46:33] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-05 23:46:33 - INFO - 127.0.0.1 - - [05/Mar/2026 23:46:33] "GET / HTTP/1.1" 200 -
+2026-03-05 23:46:37 - INFO - 127.0.0.1 - - [05/Mar/2026 23:46:37] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-05 23:46:37 - INFO - 127.0.0.1 - - [05/Mar/2026 23:46:37] "GET / HTTP/1.1" 200 -
+2026-03-05 23:46:39 - INFO - 127.0.0.1 - - [05/Mar/2026 23:46:39] "GET /login HTTP/1.1" 200 -
+2026-03-05 23:46:56 - INFO -  * Detected change in 'C:\\Users\\pavit\\Desktop\\HealthCare\\HealthCare\\app.py', reloading
+2026-03-05 23:46:56 - INFO -  * Restarting with stat
+2026-03-05 23:46:58 - WARNING -  * Debugger is active!
+2026-03-05 23:46:58 - INFO -  * Debugger PIN: 142-506-240
+2026-03-05 23:47:02 - INFO -  * Detected change in 'C:\\Users\\pavit\\Desktop\\HealthCare\\HealthCare\\app.py', reloading
+2026-03-05 23:47:02 - INFO -  * Restarting with stat
+2026-03-05 23:47:04 - WARNING -  * Debugger is active!
+2026-03-05 23:47:04 - INFO -  * Debugger PIN: 142-506-240
+2026-03-05 23:47:06 - INFO -  * Detected change in 'C:\\Users\\pavit\\Desktop\\HealthCare\\HealthCare\\app.py', reloading
+2026-03-05 23:47:06 - INFO -  * Restarting with stat
+2026-03-05 23:47:09 - WARNING -  * Debugger is active!
+2026-03-05 23:47:09 - INFO -  * Debugger PIN: 142-506-240
+2026-03-05 23:47:12 - INFO -  * Detected change in 'C:\\Users\\pavit\\Desktop\\HealthCare\\HealthCare\\app.py', reloading
+2026-03-05 23:47:13 - INFO -  * Restarting with stat
+2026-03-05 23:47:15 - WARNING -  * Debugger is active!
+2026-03-05 23:47:15 - INFO -  * Debugger PIN: 142-506-240
+2026-03-05 23:47:38 - INFO - User logged in: DOC1 (rajesh.kumar@medtrack.com)
+2026-03-05 23:47:38 - INFO - 127.0.0.1 - - [05/Mar/2026 23:47:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 23:47:38 - INFO - 127.0.0.1 - - [05/Mar/2026 23:47:38] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-05 23:47:44 - INFO - 127.0.0.1 - - [05/Mar/2026 23:47:44] "GET /profile/doctor HTTP/1.1" 200 -
+2026-03-05 23:47:55 - INFO - 127.0.0.1 - - [05/Mar/2026 23:47:55] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-05 23:47:57 - INFO - 127.0.0.1 - - [05/Mar/2026 23:47:57] "GET /appointment/APT001/view HTTP/1.1" 200 -
+2026-03-05 23:48:13 - INFO - 127.0.0.1 - - [05/Mar/2026 23:48:13] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-05 23:48:36 - INFO - 127.0.0.1 - - [05/Mar/2026 23:48:36] "GET /login HTTP/1.1" 200 -
+2026-03-05 23:48:49 - INFO - User logged in: PAT1 (arjun.singh@email.com)
+2026-03-05 23:48:49 - INFO - 127.0.0.1 - - [05/Mar/2026 23:48:49] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 23:48:49 - INFO - 127.0.0.1 - - [05/Mar/2026 23:48:49] "[35m[1mGET /patient/dashboard HTTP/1.1[0m" 500 -
+2026-03-05 23:48:49 - INFO - 127.0.0.1 - - [05/Mar/2026 23:48:49] "GET /patient/dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-03-05 23:48:49 - INFO - 127.0.0.1 - - [05/Mar/2026 23:48:49] "GET /patient/dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-03-05 23:48:50 - INFO - 127.0.0.1 - - [05/Mar/2026 23:48:50] "GET /patient/dashboard?__debugger__=yes&cmd=resource&f=console.png&s=KeOZAKpq1qjwNENf5F18 HTTP/1.1" 200 -
+2026-03-05 23:48:50 - INFO - 127.0.0.1 - - [05/Mar/2026 23:48:50] "GET /patient/dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-03-05 23:49:04 - INFO - 127.0.0.1 - - [05/Mar/2026 23:49:04] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-05 23:49:04 - INFO - 127.0.0.1 - - [05/Mar/2026 23:49:04] "GET / HTTP/1.1" 200 -
+2026-03-05 23:49:05 - INFO - 127.0.0.1 - - [05/Mar/2026 23:49:05] "GET /login HTTP/1.1" 200 -
+2026-03-05 23:49:22 - INFO - User logged in: PAT1 (arjun.singh@email.com)
+2026-03-05 23:49:22 - INFO - 127.0.0.1 - - [05/Mar/2026 23:49:22] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-05 23:49:22 - INFO - 127.0.0.1 - - [05/Mar/2026 23:49:22] "[35m[1mGET /patient/dashboard HTTP/1.1[0m" 500 -
+2026-03-05 23:49:22 - INFO - 127.0.0.1 - - [05/Mar/2026 23:49:22] "[36mGET /patient/dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-03-05 23:49:22 - INFO - 127.0.0.1 - - [05/Mar/2026 23:49:22] "[36mGET /patient/dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-03-05 23:49:22 - INFO - 127.0.0.1 - - [05/Mar/2026 23:49:22] "[36mGET /patient/dashboard?__debugger__=yes&cmd=resource&f=console.png&s=KeOZAKpq1qjwNENf5F18 HTTP/1.1[0m" 304 -
+2026-03-05 23:49:35 - INFO - 127.0.0.1 - - [05/Mar/2026 23:49:35] "[36mGET /patient/dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-03-05 23:49:35 - INFO - 127.0.0.1 - - [05/Mar/2026 23:49:35] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-03-05 23:50:37 - INFO -  * Detected change in 'C:\\Users\\pavit\\Desktop\\HealthCare\\HealthCare\\app.py', reloading
+2026-03-05 23:50:37 - INFO -  * Restarting with stat
+2026-03-05 23:50:40 - WARNING -  * Debugger is active!
+2026-03-05 23:50:40 - INFO -  * Debugger PIN: 142-506-240
+2026-03-06 00:29:19 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-06 00:29:19 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-06 00:29:19 - INFO -  * Restarting with stat
+2026-03-06 00:29:21 - WARNING -  * Debugger is active!
+2026-03-06 00:29:21 - INFO -  * Debugger PIN: 142-506-240
+2026-03-06 00:29:26 - INFO - 127.0.0.1 - - [06/Mar/2026 00:29:26] "GET / HTTP/1.1" 200 -
+2026-03-06 00:29:27 - INFO - 127.0.0.1 - - [06/Mar/2026 00:29:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-06 00:29:32 - INFO - 127.0.0.1 - - [06/Mar/2026 00:29:32] "GET /login HTTP/1.1" 200 -
+2026-03-06 00:30:59 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-06 00:30:59 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-06 00:30:59 - INFO -  * Restarting with stat
+2026-03-06 00:31:01 - WARNING -  * Debugger is active!
+2026-03-06 00:31:02 - INFO -  * Debugger PIN: 142-506-240
+2026-03-06 00:31:10 - INFO - 127.0.0.1 - - [06/Mar/2026 00:31:10] "GET / HTTP/1.1" 200 -
+2026-03-06 00:31:12 - INFO - 127.0.0.1 - - [06/Mar/2026 00:31:12] "GET /login HTTP/1.1" 200 -
+2026-03-06 00:31:59 - INFO - User logged in: PAT1 (arjun.singh@email.com)
+2026-03-06 00:31:59 - INFO - 127.0.0.1 - - [06/Mar/2026 00:31:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 00:31:59 - INFO - 127.0.0.1 - - [06/Mar/2026 00:31:59] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 00:32:34 - INFO - 127.0.0.1 - - [06/Mar/2026 00:32:34] "GET /appointment/APT001/patient-view HTTP/1.1" 200 -
+2026-03-06 00:32:40 - INFO - 127.0.0.1 - - [06/Mar/2026 00:32:40] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 00:32:40 - INFO - 127.0.0.1 - - [06/Mar/2026 00:32:40] "GET / HTTP/1.1" 200 -
+2026-03-06 00:32:42 - INFO - 127.0.0.1 - - [06/Mar/2026 00:32:42] "GET /login HTTP/1.1" 200 -
+2026-03-06 00:32:52 - INFO - 127.0.0.1 - - [06/Mar/2026 00:32:52] "GET /login HTTP/1.1" 200 -
+2026-03-06 00:33:25 - INFO - User logged in: PAT2 (anaya.patel@email.com)
+2026-03-06 00:33:25 - INFO - 127.0.0.1 - - [06/Mar/2026 00:33:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 00:33:25 - INFO - 127.0.0.1 - - [06/Mar/2026 00:33:25] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 00:33:32 - INFO - 127.0.0.1 - - [06/Mar/2026 00:33:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 00:33:32 - INFO - 127.0.0.1 - - [06/Mar/2026 00:33:32] "GET / HTTP/1.1" 200 -
+2026-03-06 00:33:34 - INFO - 127.0.0.1 - - [06/Mar/2026 00:33:34] "GET /login HTTP/1.1" 200 -
+2026-03-06 00:33:57 - INFO - User logged in: DOC1 (rajesh.kumar@medtrack.com)
+2026-03-06 00:33:57 - INFO - 127.0.0.1 - - [06/Mar/2026 00:33:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 00:33:57 - INFO - 127.0.0.1 - - [06/Mar/2026 00:33:57] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 00:34:03 - INFO - 127.0.0.1 - - [06/Mar/2026 00:34:03] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 00:34:03 - INFO - 127.0.0.1 - - [06/Mar/2026 00:34:03] "GET / HTTP/1.1" 200 -
+2026-03-06 00:34:04 - INFO - 127.0.0.1 - - [06/Mar/2026 00:34:04] "GET /login HTTP/1.1" 200 -
+2026-03-06 00:34:22 - INFO - User logged in: DOC2 (nandini.sure@medtrack.com)
+2026-03-06 00:34:22 - INFO - 127.0.0.1 - - [06/Mar/2026 00:34:22] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 00:34:22 - INFO - 127.0.0.1 - - [06/Mar/2026 00:34:22] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 00:34:29 - INFO - 127.0.0.1 - - [06/Mar/2026 00:34:29] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 00:34:29 - INFO - 127.0.0.1 - - [06/Mar/2026 00:34:29] "GET / HTTP/1.1" 200 -
+2026-03-06 00:36:33 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-06 00:36:33 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-06 00:36:33 - INFO -  * Restarting with stat
+2026-03-06 00:36:36 - WARNING -  * Debugger is active!
+2026-03-06 00:36:36 - INFO -  * Debugger PIN: 142-506-240
+2026-03-06 00:36:41 - INFO - 127.0.0.1 - - [06/Mar/2026 00:36:41] "GET / HTTP/1.1" 200 -
+2026-03-06 00:36:41 - INFO - 127.0.0.1 - - [06/Mar/2026 00:36:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-06 00:36:45 - INFO - 127.0.0.1 - - [06/Mar/2026 00:36:45] "GET / HTTP/1.1" 200 -
+2026-03-06 00:39:29 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-06 00:39:29 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-06 00:39:29 - INFO -  * Restarting with stat
+2026-03-06 00:39:31 - WARNING -  * Debugger is active!
+2026-03-06 00:39:31 - INFO -  * Debugger PIN: 679-792-121
+2026-03-06 00:39:35 - INFO - 127.0.0.1 - - [06/Mar/2026 00:39:35] "GET / HTTP/1.1" 200 -
+2026-03-06 00:39:35 - INFO - 127.0.0.1 - - [06/Mar/2026 00:39:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-06 00:39:39 - INFO - 127.0.0.1 - - [06/Mar/2026 00:39:39] "GET / HTTP/1.1" 200 -
+2026-03-06 08:43:47 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-06 08:43:47 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-06 08:43:47 - INFO -  * Restarting with stat
+2026-03-06 08:43:49 - WARNING -  * Debugger is active!
+2026-03-06 08:43:50 - INFO -  * Debugger PIN: 679-792-121
+2026-03-06 08:43:52 - INFO - 127.0.0.1 - - [06/Mar/2026 08:43:52] "GET / HTTP/1.1" 200 -
+2026-03-06 08:43:53 - INFO - 127.0.0.1 - - [06/Mar/2026 08:43:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-06 08:44:13 - INFO - 127.0.0.1 - - [06/Mar/2026 08:44:13] "GET /register HTTP/1.1" 200 -
+2026-03-06 08:44:20 - INFO - 127.0.0.1 - - [06/Mar/2026 08:44:20] "GET /login HTTP/1.1" 200 -
+2026-03-06 08:44:30 - WARNING - Failed login attempt for email: suremallikarjun2@gmail.com
+2026-03-06 08:44:30 - INFO - 127.0.0.1 - - [06/Mar/2026 08:44:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 08:44:30 - INFO - 127.0.0.1 - - [06/Mar/2026 08:44:30] "GET /login HTTP/1.1" 200 -
+2026-03-06 08:44:39 - INFO - User logged in: DOC2 (nandini.sure@medtrack.com)
+2026-03-06 08:44:39 - INFO - 127.0.0.1 - - [06/Mar/2026 08:44:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 08:44:39 - INFO - 127.0.0.1 - - [06/Mar/2026 08:44:39] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 08:44:44 - INFO - 127.0.0.1 - - [06/Mar/2026 08:44:44] "GET /appointment/APT002/view HTTP/1.1" 200 -
+2026-03-06 08:44:51 - INFO - 127.0.0.1 - - [06/Mar/2026 08:44:51] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 08:44:55 - INFO - 127.0.0.1 - - [06/Mar/2026 08:44:55] "GET /profile/doctor HTTP/1.1" 200 -
+2026-03-06 08:45:04 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:04] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 08:45:04 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:04] "GET / HTTP/1.1" 200 -
+2026-03-06 08:45:05 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:05] "GET /login HTTP/1.1" 200 -
+2026-03-06 08:45:11 - INFO - User logged in: PAT2 (anaya.patel@email.com)
+2026-03-06 08:45:11 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 08:45:11 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:11] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 08:45:17 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:17] "GET /appointment/book HTTP/1.1" 200 -
+2026-03-06 08:45:25 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:25] "GET /appointment/APT002/patient-view HTTP/1.1" 200 -
+2026-03-06 08:45:29 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:29] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 08:45:32 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:32] "GET /diagnoses HTTP/1.1" 200 -
+2026-03-06 08:45:34 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:34] "GET /appointment/APT002/patient-view HTTP/1.1" 200 -
+2026-03-06 08:45:42 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:42] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 08:45:44 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:44] "GET /profile/patient HTTP/1.1" 200 -
+2026-03-06 08:45:49 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:49] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 08:45:51 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:51] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 08:45:51 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:51] "GET / HTTP/1.1" 200 -
+2026-03-06 08:45:54 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:54] "GET /register HTTP/1.1" 200 -
+2026-03-06 08:45:59 - INFO - 127.0.0.1 - - [06/Mar/2026 08:45:59] "GET /login HTTP/1.1" 200 -
+2026-03-06 08:46:11 - WARNING - Failed login attempt for email: suremallikarjun2@gmail.com
+2026-03-06 08:46:11 - INFO - 127.0.0.1 - - [06/Mar/2026 08:46:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 08:46:11 - INFO - 127.0.0.1 - - [06/Mar/2026 08:46:11] "GET /login HTTP/1.1" 200 -
+2026-03-06 08:46:20 - WARNING - Failed login attempt for email: sumith2@gmail.com
+2026-03-06 08:46:20 - INFO - 127.0.0.1 - - [06/Mar/2026 08:46:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 08:46:20 - INFO - 127.0.0.1 - - [06/Mar/2026 08:46:20] "GET /login HTTP/1.1" 200 -
+2026-03-06 08:46:23 - INFO - 127.0.0.1 - - [06/Mar/2026 08:46:23] "GET /login HTTP/1.1" 200 -
+2026-03-06 12:09:21 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-06 12:09:21 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-06 12:09:21 - INFO -  * Restarting with stat
+2026-03-06 12:09:22 - WARNING -  * Debugger is active!
+2026-03-06 12:09:22 - INFO -  * Debugger PIN: 679-792-121
+2026-03-06 12:09:31 - INFO - 127.0.0.1 - - [06/Mar/2026 12:09:31] "GET / HTTP/1.1" 200 -
+2026-03-06 12:09:31 - INFO - 127.0.0.1 - - [06/Mar/2026 12:09:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-06 12:09:48 - INFO - 127.0.0.1 - - [06/Mar/2026 12:09:48] "GET /login HTTP/1.1" 200 -
+2026-03-06 12:10:06 - INFO - User logged in: PAT2 (anaya.patel@email.com)
+2026-03-06 12:10:06 - INFO - 127.0.0.1 - - [06/Mar/2026 12:10:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 12:10:06 - INFO - 127.0.0.1 - - [06/Mar/2026 12:10:06] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:10:21 - INFO - 127.0.0.1 - - [06/Mar/2026 12:10:21] "GET /appointment/APT002/patient-view HTTP/1.1" 200 -
+2026-03-06 12:10:40 - INFO - 127.0.0.1 - - [06/Mar/2026 12:10:40] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:10:43 - INFO - 127.0.0.1 - - [06/Mar/2026 12:10:43] "GET /appointment/APT003/patient-view HTTP/1.1" 200 -
+2026-03-06 12:10:53 - INFO - 127.0.0.1 - - [06/Mar/2026 12:10:53] "GET /appointment/book HTTP/1.1" 200 -
+2026-03-06 12:11:03 - INFO - 127.0.0.1 - - [06/Mar/2026 12:11:03] "GET /appointment/book HTTP/1.1" 200 -
+2026-03-06 12:11:07 - INFO - 127.0.0.1 - - [06/Mar/2026 12:11:07] "GET /diagnoses HTTP/1.1" 200 -
+2026-03-06 12:11:10 - INFO - 127.0.0.1 - - [06/Mar/2026 12:11:10] "GET /appointment/APT002/patient-view HTTP/1.1" 200 -
+2026-03-06 12:11:14 - INFO - 127.0.0.1 - - [06/Mar/2026 12:11:14] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:11:15 - INFO - 127.0.0.1 - - [06/Mar/2026 12:11:15] "GET /profile/patient HTTP/1.1" 200 -
+2026-03-06 12:11:29 - INFO - 127.0.0.1 - - [06/Mar/2026 12:11:29] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:11:38 - INFO - 127.0.0.1 - - [06/Mar/2026 12:11:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 12:11:38 - INFO - 127.0.0.1 - - [06/Mar/2026 12:11:38] "GET / HTTP/1.1" 200 -
+2026-03-06 12:11:40 - INFO - 127.0.0.1 - - [06/Mar/2026 12:11:40] "GET /login HTTP/1.1" 200 -
+2026-03-06 12:11:48 - INFO - User logged in: DOC2 (nandini.sure@medtrack.com)
+2026-03-06 12:11:48 - INFO - 127.0.0.1 - - [06/Mar/2026 12:11:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 12:11:48 - INFO - 127.0.0.1 - - [06/Mar/2026 12:11:48] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 12:12:20 - INFO - 127.0.0.1 - - [06/Mar/2026 12:12:20] "GET /appointment/APT002/view HTTP/1.1" 200 -
+2026-03-06 12:12:36 - INFO - 127.0.0.1 - - [06/Mar/2026 12:12:36] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 12:12:38 - INFO - 127.0.0.1 - - [06/Mar/2026 12:12:38] "GET /profile/doctor HTTP/1.1" 200 -
+2026-03-06 12:12:48 - INFO - 127.0.0.1 - - [06/Mar/2026 12:12:48] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 12:12:55 - INFO - 127.0.0.1 - - [06/Mar/2026 12:12:55] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 12:12:55 - INFO - 127.0.0.1 - - [06/Mar/2026 12:12:55] "GET / HTTP/1.1" 200 -
+2026-03-06 12:13:15 - INFO - 127.0.0.1 - - [06/Mar/2026 12:13:15] "GET /register HTTP/1.1" 200 -
+2026-03-06 12:14:20 - INFO - New user registered: DOC51A001 (raj@gmail.com)
+2026-03-06 12:14:20 - INFO - 127.0.0.1 - - [06/Mar/2026 12:14:20] "[32mPOST /register HTTP/1.1[0m" 302 -
+2026-03-06 12:14:20 - INFO - 127.0.0.1 - - [06/Mar/2026 12:14:20] "GET /login HTTP/1.1" 200 -
+2026-03-06 12:14:33 - INFO - User logged in: DOC51A001 (raj@gmail.com)
+2026-03-06 12:14:33 - INFO - 127.0.0.1 - - [06/Mar/2026 12:14:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 12:14:33 - INFO - 127.0.0.1 - - [06/Mar/2026 12:14:33] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 12:14:38 - INFO - 127.0.0.1 - - [06/Mar/2026 12:14:38] "GET /profile/doctor HTTP/1.1" 200 -
+2026-03-06 12:14:46 - INFO - 127.0.0.1 - - [06/Mar/2026 12:14:46] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 12:14:50 - INFO - 127.0.0.1 - - [06/Mar/2026 12:14:50] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 12:14:50 - INFO - 127.0.0.1 - - [06/Mar/2026 12:14:50] "GET / HTTP/1.1" 200 -
+2026-03-06 12:14:52 - INFO - 127.0.0.1 - - [06/Mar/2026 12:14:52] "GET /register HTTP/1.1" 200 -
+2026-03-06 12:16:03 - INFO - New user registered: PAT843F44 (rahul@gmail.com)
+2026-03-06 12:16:03 - INFO - 127.0.0.1 - - [06/Mar/2026 12:16:03] "[32mPOST /register HTTP/1.1[0m" 302 -
+2026-03-06 12:16:03 - INFO - 127.0.0.1 - - [06/Mar/2026 12:16:03] "GET /login HTTP/1.1" 200 -
+2026-03-06 12:16:29 - WARNING - Role mismatch for rahul@gmail.com: selected doctor, actual patient
+2026-03-06 12:16:29 - INFO - 127.0.0.1 - - [06/Mar/2026 12:16:29] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 12:16:29 - INFO - 127.0.0.1 - - [06/Mar/2026 12:16:29] "GET /login HTTP/1.1" 200 -
+2026-03-06 12:16:39 - INFO - User logged in: PAT843F44 (rahul@gmail.com)
+2026-03-06 12:16:39 - INFO - 127.0.0.1 - - [06/Mar/2026 12:16:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 12:16:39 - INFO - 127.0.0.1 - - [06/Mar/2026 12:16:39] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:16:46 - INFO - 127.0.0.1 - - [06/Mar/2026 12:16:46] "GET /profile/patient HTTP/1.1" 200 -
+2026-03-06 12:17:01 - INFO - 127.0.0.1 - - [06/Mar/2026 12:17:01] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:17:02 - INFO - 127.0.0.1 - - [06/Mar/2026 12:17:02] "GET /appointment/book HTTP/1.1" 200 -
+2026-03-06 12:17:38 - WARNING - SMTP credentials not configured, skipping email to raj@gmail.com
+2026-03-06 12:17:38 - INFO - Appointment booked: APTF21EC6 (Patient: Rahul, Doctor: Raj)
+2026-03-06 12:17:38 - INFO - 127.0.0.1 - - [06/Mar/2026 12:17:38] "[32mPOST /appointment/book HTTP/1.1[0m" 302 -
+2026-03-06 12:17:38 - INFO - 127.0.0.1 - - [06/Mar/2026 12:17:38] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:17:48 - INFO - 127.0.0.1 - - [06/Mar/2026 12:17:48] "GET /appointment/APTF21EC6/patient-view HTTP/1.1" 200 -
+2026-03-06 12:17:51 - INFO - 127.0.0.1 - - [06/Mar/2026 12:17:51] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:17:53 - INFO - 127.0.0.1 - - [06/Mar/2026 12:17:53] "GET /appointment/book HTTP/1.1" 200 -
+2026-03-06 12:17:55 - INFO - 127.0.0.1 - - [06/Mar/2026 12:17:55] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:17:56 - INFO - 127.0.0.1 - - [06/Mar/2026 12:17:56] "GET /diagnoses HTTP/1.1" 200 -
+2026-03-06 12:18:00 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:00] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:18:03 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:03] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 12:18:03 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:03] "GET / HTTP/1.1" 200 -
+2026-03-06 12:18:05 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:05] "GET /login HTTP/1.1" 200 -
+2026-03-06 12:18:12 - INFO - User logged in: DOC51A001 (raj@gmail.com)
+2026-03-06 12:18:12 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 12:18:12 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:12] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 12:18:20 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:20] "GET /appointment/APTF21EC6/view HTTP/1.1" 200 -
+2026-03-06 12:18:34 - WARNING - SMTP credentials not configured, skipping email to rahul@gmail.com
+2026-03-06 12:18:34 - INFO - Diagnosis submitted for appointment APTF21EC6
+2026-03-06 12:18:34 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:34] "[32mPOST /appointment/APTF21EC6/submit-diagnosis HTTP/1.1[0m" 302 -
+2026-03-06 12:18:34 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:34] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 12:18:49 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:49] "GET /profile/doctor HTTP/1.1" 200 -
+2026-03-06 12:18:52 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:52] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 12:18:54 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:54] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 12:18:54 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:54] "GET / HTTP/1.1" 200 -
+2026-03-06 12:18:55 - INFO - 127.0.0.1 - - [06/Mar/2026 12:18:55] "GET /login HTTP/1.1" 200 -
+2026-03-06 12:19:02 - INFO - User logged in: PAT843F44 (rahul@gmail.com)
+2026-03-06 12:19:02 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:02] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 12:19:02 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:02] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:19:12 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:12] "GET /appointment/APTF21EC6/patient-view HTTP/1.1" 200 -
+2026-03-06 12:19:18 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:18] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:19:20 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:20] "GET /appointment/book HTTP/1.1" 200 -
+2026-03-06 12:19:22 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:22] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:19:23 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:23] "GET /diagnoses HTTP/1.1" 200 -
+2026-03-06 12:19:29 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:29] "GET /appointment/APTF21EC6/patient-view HTTP/1.1" 200 -
+2026-03-06 12:19:32 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:32] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:19:34 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:34] "GET /profile/patient HTTP/1.1" 200 -
+2026-03-06 12:19:36 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:36] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 12:19:40 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:40] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 12:19:40 - INFO - 127.0.0.1 - - [06/Mar/2026 12:19:40] "GET / HTTP/1.1" 200 -
+2026-03-06 17:35:00 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-06 17:35:00 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-06 17:35:00 - INFO -  * Restarting with stat
+2026-03-06 17:35:02 - WARNING -  * Debugger is active!
+2026-03-06 17:35:02 - INFO -  * Debugger PIN: 679-792-121
+2026-03-06 17:35:12 - INFO - 127.0.0.1 - - [06/Mar/2026 17:35:12] "GET / HTTP/1.1" 200 -
+2026-03-06 17:35:13 - INFO - 127.0.0.1 - - [06/Mar/2026 17:35:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-06 17:35:16 - INFO - 127.0.0.1 - - [06/Mar/2026 17:35:16] "GET /login HTTP/1.1" 200 -
+2026-03-06 17:35:26 - INFO - User logged in: DOC2 (nandini.sure@medtrack.com)
+2026-03-06 17:35:26 - INFO - 127.0.0.1 - - [06/Mar/2026 17:35:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 17:35:26 - INFO - 127.0.0.1 - - [06/Mar/2026 17:35:26] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 17:35:28 - INFO - 127.0.0.1 - - [06/Mar/2026 17:35:28] "GET /profile/doctor HTTP/1.1" 200 -
+2026-03-06 17:36:10 - INFO - 127.0.0.1 - - [06/Mar/2026 17:36:10] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 17:36:50 - INFO - 127.0.0.1 - - [06/Mar/2026 17:36:50] "GET /profile/doctor HTTP/1.1" 200 -
+2026-03-06 17:37:33 - INFO - 127.0.0.1 - - [06/Mar/2026 17:37:33] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 17:37:37 - INFO - 127.0.0.1 - - [06/Mar/2026 17:37:37] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 17:37:37 - INFO - 127.0.0.1 - - [06/Mar/2026 17:37:37] "GET / HTTP/1.1" 200 -
+2026-03-06 17:37:39 - INFO - 127.0.0.1 - - [06/Mar/2026 17:37:39] "GET /login HTTP/1.1" 200 -
+2026-03-06 17:37:53 - INFO - 127.0.0.1 - - [06/Mar/2026 17:37:53] "GET /login HTTP/1.1" 200 -
+2026-03-06 17:38:00 - INFO - 127.0.0.1 - - [06/Mar/2026 17:38:00] "GET /register HTTP/1.1" 200 -
+2026-03-06 17:39:18 - INFO - New user registered: PATFE247B (sridevi@gmail.com)
+2026-03-06 17:39:18 - INFO - 127.0.0.1 - - [06/Mar/2026 17:39:18] "[32mPOST /register HTTP/1.1[0m" 302 -
+2026-03-06 17:39:18 - INFO - 127.0.0.1 - - [06/Mar/2026 17:39:18] "GET /login HTTP/1.1" 200 -
+2026-03-06 17:39:33 - INFO - User logged in: PATFE247B (sridevi@gmail.com)
+2026-03-06 17:39:33 - INFO - 127.0.0.1 - - [06/Mar/2026 17:39:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 17:39:33 - INFO - 127.0.0.1 - - [06/Mar/2026 17:39:33] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 17:39:38 - INFO - 127.0.0.1 - - [06/Mar/2026 17:39:38] "GET /profile/patient HTTP/1.1" 200 -
+2026-03-06 17:39:55 - INFO - 127.0.0.1 - - [06/Mar/2026 17:39:55] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 17:39:56 - INFO - 127.0.0.1 - - [06/Mar/2026 17:39:56] "GET /appointment/book HTTP/1.1" 200 -
+2026-03-06 17:41:27 - WARNING - SMTP credentials not configured, skipping email to nandini.sure@medtrack.com
+2026-03-06 17:41:27 - INFO - Appointment booked: APT8F3CDA (Patient: Shridevi Sure, Doctor: Nandini Sure)
+2026-03-06 17:41:27 - INFO - 127.0.0.1 - - [06/Mar/2026 17:41:27] "[32mPOST /appointment/book HTTP/1.1[0m" 302 -
+2026-03-06 17:41:27 - INFO - 127.0.0.1 - - [06/Mar/2026 17:41:27] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 17:50:47 - INFO - 127.0.0.1 - - [06/Mar/2026 17:50:47] "GET /appointment/APT8F3CDA/patient-view HTTP/1.1" 200 -
+2026-03-06 17:50:54 - INFO - 127.0.0.1 - - [06/Mar/2026 17:50:54] "GET /profile/patient HTTP/1.1" 200 -
+2026-03-06 17:50:58 - INFO - 127.0.0.1 - - [06/Mar/2026 17:50:58] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 17:50:58 - INFO - 127.0.0.1 - - [06/Mar/2026 17:50:58] "GET / HTTP/1.1" 200 -
+2026-03-06 17:50:59 - INFO - 127.0.0.1 - - [06/Mar/2026 17:50:59] "GET /login HTTP/1.1" 200 -
+2026-03-06 17:51:09 - INFO - User logged in: DOC2 (nandini.sure@medtrack.com)
+2026-03-06 17:51:09 - INFO - 127.0.0.1 - - [06/Mar/2026 17:51:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 17:51:09 - INFO - 127.0.0.1 - - [06/Mar/2026 17:51:09] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 17:51:15 - INFO - 127.0.0.1 - - [06/Mar/2026 17:51:15] "GET /appointment/APT8F3CDA/view HTTP/1.1" 200 -
+2026-03-06 17:51:51 - WARNING - SMTP credentials not configured, skipping email to sridevi@gmail.com
+2026-03-06 17:51:51 - INFO - Diagnosis submitted for appointment APT8F3CDA
+2026-03-06 17:51:51 - INFO - 127.0.0.1 - - [06/Mar/2026 17:51:51] "[32mPOST /appointment/APT8F3CDA/submit-diagnosis HTTP/1.1[0m" 302 -
+2026-03-06 17:51:51 - INFO - 127.0.0.1 - - [06/Mar/2026 17:51:51] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 17:51:56 - INFO - 127.0.0.1 - - [06/Mar/2026 17:51:56] "GET /appointment/APT8F3CDA/view HTTP/1.1" 200 -
+2026-03-06 17:52:02 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:02] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-06 17:52:03 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:03] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 17:52:03 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:03] "GET / HTTP/1.1" 200 -
+2026-03-06 17:52:04 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:04] "GET /login HTTP/1.1" 200 -
+2026-03-06 17:52:14 - INFO - User logged in: PATFE247B (sridevi@gmail.com)
+2026-03-06 17:52:14 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-06 17:52:14 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:14] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 17:52:18 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:18] "GET /appointment/APT8F3CDA/patient-view HTTP/1.1" 200 -
+2026-03-06 17:52:27 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:27] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 17:52:31 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:31] "GET /diagnoses HTTP/1.1" 200 -
+2026-03-06 17:52:35 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:35] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 17:52:36 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:36] "GET /profile/patient HTTP/1.1" 200 -
+2026-03-06 17:52:39 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:39] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-06 17:52:43 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:43] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-06 17:52:43 - INFO - 127.0.0.1 - - [06/Mar/2026 17:52:43] "GET / HTTP/1.1" 200 -
+2026-03-08 15:06:36 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-08 15:06:36 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-08 15:06:36 - INFO -  * Restarting with stat
+2026-03-08 15:06:38 - WARNING -  * Debugger is active!
+2026-03-08 15:06:38 - INFO -  * Debugger PIN: 679-792-121
+2026-03-08 15:06:54 - INFO - 127.0.0.1 - - [08/Mar/2026 15:06:54] "GET / HTTP/1.1" 200 -
+2026-03-08 15:06:55 - INFO - 127.0.0.1 - - [08/Mar/2026 15:06:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-08 15:07:11 - INFO - 127.0.0.1 - - [08/Mar/2026 15:07:11] "GET /login HTTP/1.1" 200 -
+2026-03-08 15:07:26 - INFO - User logged in: PAT2 (anaya.patel@email.com)
+2026-03-08 15:07:26 - INFO - 127.0.0.1 - - [08/Mar/2026 15:07:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-08 15:07:26 - INFO - 127.0.0.1 - - [08/Mar/2026 15:07:26] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:07:29 - INFO - 127.0.0.1 - - [08/Mar/2026 15:07:29] "GET /appointment/book HTTP/1.1" 200 -
+2026-03-08 15:07:35 - INFO - 127.0.0.1 - - [08/Mar/2026 15:07:35] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:07:47 - INFO - 127.0.0.1 - - [08/Mar/2026 15:07:47] "GET /appointment/book HTTP/1.1" 200 -
+2026-03-08 15:07:56 - INFO - 127.0.0.1 - - [08/Mar/2026 15:07:56] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:08:08 - INFO - 127.0.0.1 - - [08/Mar/2026 15:08:08] "GET /profile/patient HTTP/1.1" 200 -
+2026-03-08 15:08:19 - INFO - 127.0.0.1 - - [08/Mar/2026 15:08:19] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:08:21 - INFO - 127.0.0.1 - - [08/Mar/2026 15:08:21] "GET /profile/patient HTTP/1.1" 200 -
+2026-03-08 15:08:23 - INFO - 127.0.0.1 - - [08/Mar/2026 15:08:23] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:08:25 - INFO - 127.0.0.1 - - [08/Mar/2026 15:08:25] "GET /appointment/book HTTP/1.1" 200 -
+2026-03-08 15:09:20 - WARNING - SMTP credentials not configured, skipping email to rajesh.kumar@medtrack.com
+2026-03-08 15:09:20 - INFO - Appointment booked: APTEF3132 (Patient: Anaya Patel, Doctor: Rajesh Kumar)
+2026-03-08 15:09:20 - INFO - 127.0.0.1 - - [08/Mar/2026 15:09:20] "[32mPOST /appointment/book HTTP/1.1[0m" 302 -
+2026-03-08 15:09:20 - INFO - 127.0.0.1 - - [08/Mar/2026 15:09:20] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:09:24 - INFO - 127.0.0.1 - - [08/Mar/2026 15:09:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-08 15:09:24 - INFO - 127.0.0.1 - - [08/Mar/2026 15:09:24] "GET / HTTP/1.1" 200 -
+2026-03-08 15:09:25 - INFO - 127.0.0.1 - - [08/Mar/2026 15:09:25] "GET /login HTTP/1.1" 200 -
+2026-03-08 15:09:36 - INFO - User logged in: DOC1 (rajesh.kumar@medtrack.com)
+2026-03-08 15:09:36 - INFO - 127.0.0.1 - - [08/Mar/2026 15:09:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-08 15:09:36 - INFO - 127.0.0.1 - - [08/Mar/2026 15:09:36] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-08 15:09:44 - INFO - 127.0.0.1 - - [08/Mar/2026 15:09:44] "GET /appointment/APT003/view HTTP/1.1" 200 -
+2026-03-08 15:09:54 - WARNING - SMTP credentials not configured, skipping email to anaya.patel@email.com
+2026-03-08 15:09:54 - INFO - Diagnosis submitted for appointment APT003
+2026-03-08 15:09:54 - INFO - 127.0.0.1 - - [08/Mar/2026 15:09:54] "[32mPOST /appointment/APT003/submit-diagnosis HTTP/1.1[0m" 302 -
+2026-03-08 15:09:54 - INFO - 127.0.0.1 - - [08/Mar/2026 15:09:54] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-08 15:10:01 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:01] "GET /profile/doctor HTTP/1.1" 200 -
+2026-03-08 15:10:05 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:05] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-08 15:10:07 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:07] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-08 15:10:07 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:07] "GET / HTTP/1.1" 200 -
+2026-03-08 15:10:08 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:08] "GET /login HTTP/1.1" 200 -
+2026-03-08 15:10:13 - INFO - User logged in: PAT2 (anaya.patel@email.com)
+2026-03-08 15:10:13 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:13] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-08 15:10:13 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:13] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:10:19 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:19] "GET /diagnoses HTTP/1.1" 200 -
+2026-03-08 15:10:24 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:24] "GET /appointment/APT003/patient-view HTTP/1.1" 200 -
+2026-03-08 15:10:40 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:40] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:10:42 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:42] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-08 15:10:42 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:42] "GET / HTTP/1.1" 200 -
+2026-03-08 15:10:45 - INFO - 127.0.0.1 - - [08/Mar/2026 15:10:45] "GET /register HTTP/1.1" 200 -
+2026-03-08 15:27:32 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-08 15:27:32 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-08 15:27:32 - INFO -  * Restarting with stat
+2026-03-08 15:27:34 - WARNING -  * Debugger is active!
+2026-03-08 15:27:35 - INFO -  * Debugger PIN: 117-526-026
+2026-03-08 15:27:58 - INFO - 127.0.0.1 - - [08/Mar/2026 15:27:58] "GET / HTTP/1.1" 200 -
+2026-03-08 15:27:58 - INFO - 127.0.0.1 - - [08/Mar/2026 15:27:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-08 15:28:09 - INFO - 127.0.0.1 - - [08/Mar/2026 15:28:09] "GET /login HTTP/1.1" 200 -
+2026-03-08 15:28:25 - INFO - 127.0.0.1 - - [08/Mar/2026 15:28:25] "GET /login HTTP/1.1" 200 -
+2026-03-08 15:28:40 - INFO - User logged in: PAT2 (anaya.patel@email.com)
+2026-03-08 15:28:40 - INFO - 127.0.0.1 - - [08/Mar/2026 15:28:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-08 15:28:40 - INFO - 127.0.0.1 - - [08/Mar/2026 15:28:40] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:28:48 - INFO - 127.0.0.1 - - [08/Mar/2026 15:28:48] "GET /appointment/book HTTP/1.1" 200 -
+2026-03-08 15:28:57 - INFO - 127.0.0.1 - - [08/Mar/2026 15:28:57] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:28:59 - INFO - 127.0.0.1 - - [08/Mar/2026 15:28:59] "GET /diagnoses HTTP/1.1" 200 -
+2026-03-08 15:29:01 - INFO - 127.0.0.1 - - [08/Mar/2026 15:29:01] "GET /appointment/APT002/patient-view HTTP/1.1" 200 -
+2026-03-08 15:29:12 - INFO - 127.0.0.1 - - [08/Mar/2026 15:29:12] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:29:14 - INFO - 127.0.0.1 - - [08/Mar/2026 15:29:14] "GET /profile/patient HTTP/1.1" 200 -
+2026-03-08 15:29:21 - INFO - 127.0.0.1 - - [08/Mar/2026 15:29:21] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:29:24 - INFO - 127.0.0.1 - - [08/Mar/2026 15:29:24] "GET /appointment/book HTTP/1.1" 200 -
+2026-03-08 15:29:35 - INFO - 127.0.0.1 - - [08/Mar/2026 15:29:35] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:29:40 - INFO - 127.0.0.1 - - [08/Mar/2026 15:29:40] "GET /profile/patient HTTP/1.1" 200 -
+2026-03-08 15:29:49 - INFO - 127.0.0.1 - - [08/Mar/2026 15:29:49] "GET /patient/dashboard HTTP/1.1" 200 -
+2026-03-08 15:29:50 - INFO - 127.0.0.1 - - [08/Mar/2026 15:29:50] "GET / HTTP/1.1" 200 -
+2026-03-08 15:29:58 - INFO - 127.0.0.1 - - [08/Mar/2026 15:29:58] "GET / HTTP/1.1" 200 -
+2026-03-08 15:30:02 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:02] "GET /login HTTP/1.1" 200 -
+2026-03-08 15:30:17 - INFO - User logged in: DOC2 (nandini.sure@medtrack.com)
+2026-03-08 15:30:17 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-08 15:30:17 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:17] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-08 15:30:20 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:20] "GET /profile/doctor HTTP/1.1" 200 -
+2026-03-08 15:30:24 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:24] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-08 15:30:26 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:26] "GET /appointment/APT002/view HTTP/1.1" 200 -
+2026-03-08 15:30:33 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:33] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-08 15:30:37 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:37] "GET / HTTP/1.1" 200 -
+2026-03-08 15:30:44 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:44] "GET /profile/doctor HTTP/1.1" 200 -
+2026-03-08 15:30:47 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:47] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-08 15:30:53 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:53] "GET /profile/doctor HTTP/1.1" 200 -
+2026-03-08 15:30:56 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:56] "GET /doctor/dashboard HTTP/1.1" 200 -
+2026-03-08 15:30:58 - INFO - 127.0.0.1 - - [08/Mar/2026 15:30:58] "GET / HTTP/1.1" 200 -
+2026-03-08 15:31:24 - INFO - 127.0.0.1 - - [08/Mar/2026 15:31:24] "GET / HTTP/1.1" 200 -
+2026-03-08 15:31:25 - INFO - 127.0.0.1 - - [08/Mar/2026 15:31:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-08 15:34:40 - INFO -  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\healthcare\\aws_services.py', reloading
+2026-03-08 15:34:40 - INFO -  * Restarting with stat
+2026-03-08 15:34:42 - WARNING -  * Debugger is active!
+2026-03-08 15:34:42 - INFO -  * Debugger PIN: 117-526-026
+2026-03-08 15:34:57 - INFO -  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\healthcare\\app.py', reloading
+2026-03-08 15:34:57 - INFO -  * Restarting with stat
+2026-03-08 15:34:59 - INFO - Using in-memory data store
+2026-03-08 15:34:59 - WARNING -  * Debugger is active!
+2026-03-08 15:34:59 - INFO -  * Debugger PIN: 117-526-026
+2026-03-08 15:39:06 - INFO -  * Detected change in 'C:\\Users\\pavit\\Desktop\\MedTrack\\healthcare\\aws_services.py', reloading
+2026-03-08 15:39:06 - INFO -  * Restarting with stat
+2026-03-08 15:39:08 - INFO - Using in-memory data store
+2026-03-08 15:39:08 - WARNING -  * Debugger is active!
+2026-03-08 15:39:08 - INFO -  * Debugger PIN: 117-526-026
+2026-03-08 15:44:46 - INFO - Using in-memory data store
+2026-03-08 15:44:47 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-08 15:44:47 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-08 15:44:47 - INFO -  * Restarting with stat
+2026-03-08 15:44:49 - INFO - Using in-memory data store
+2026-03-08 15:44:49 - WARNING -  * Debugger is active!
+2026-03-08 15:44:49 - INFO -  * Debugger PIN: 679-792-121
+2026-03-08 15:45:37 - INFO - 127.0.0.1 - - [08/Mar/2026 15:45:37] "GET / HTTP/1.1" 200 -
+2026-03-08 16:37:16 - INFO - Using in-memory data store
+2026-03-08 16:37:16 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-08 16:37:16 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-08 16:37:16 - INFO -  * Restarting with stat
+2026-03-08 16:37:18 - INFO - Using in-memory data store
+2026-03-08 16:37:18 - WARNING -  * Debugger is active!
+2026-03-08 16:37:18 - INFO -  * Debugger PIN: 974-017-225
+2026-03-08 21:43:05 - ERROR - boto3 is unavailable: No module named 'boto3'
+2026-03-08 21:43:05 - WARNING - Falling back to in-memory data due to DynamoDB initialization issue
+2026-03-08 21:43:06 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.6.141:5000
+2026-03-08 21:43:06 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-08 21:43:06 - INFO -  * Restarting with stat
+2026-03-08 21:43:08 - ERROR - boto3 is unavailable: No module named 'boto3'
+2026-03-08 21:43:08 - WARNING - Falling back to in-memory data due to DynamoDB initialization issue
+2026-03-08 21:43:08 - WARNING -  * Debugger is active!
+2026-03-08 21:43:08 - INFO -  * Debugger PIN: 679-792-121

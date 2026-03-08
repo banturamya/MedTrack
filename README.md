@@ -46,7 +46,7 @@ A comprehensive web-based healthcare management application built with **Flask**
 #### 1. Clone the Repository
 ```bash
 git clone https://github.com/yourusername/MedTrack.git
-cd MedTrack
+cd HealthCare
 ```
 
 #### 2. Create Virtual Environment
@@ -86,6 +86,10 @@ AWS_SECRET_ACCESS_KEY=your_secret_key
 USERS_TABLE=MedTrack_Users
 APPOINTMENTS_TABLE=MedTrack_Appointments
 NOTIFICATIONS_TABLE=MedTrack_Notifications
+
+# SNS Configuration (optional)
+ENABLE_SNS_NOTIFICATIONS=false
+SNS_TOPIC_ARN=arn:aws:sns:us-east-1:123456789012:medtrack-notifications
 ```
 
 #### 5. Run the Application
@@ -105,7 +109,7 @@ http://localhost:5000
 
 ### Doctor Accounts
 - **Email:** rajesh.kumar@medtrack.com | **Password:** password123 | **ID:** DOC1
-- **Email:** priya.sharma@medtrack.com | **Password:** password123 | **ID:** DOC2
+- **Email:** nandini.sure@medtrack.com | **Password:** password123 | **ID:** DOC2
 
 ### Patient Accounts
 - **Email:** arjun.singh@email.com | **Password:** password123 | **ID:** PAT1
@@ -120,8 +124,10 @@ MedTrack/
 │
 ├── app.py                          # Main Flask application
 ├── db.py                           # Database configuration
+├── aws_services.py                 # DynamoDB + SNS integration helpers
 ├── requirements.txt                # Project dependencies
 ├── .env.example                    # Environment variables template
+├── DEPLOY_AWS_EC2_DYNAMODB_SNS.md  # Full AWS deployment guide
 ├── LICENSE                         # MIT License
 ├── README.md                       # This file
 │
@@ -240,6 +246,11 @@ To enable email notifications:
 - AWS integration included
 - Scalable and serverless
 
+### AWS SNS
+- Topic-based notification fan-out
+- Publishes booking and consultation completion events
+- Controlled by `ENABLE_SNS_NOTIFICATIONS`
+
 ---
 
 ## 🚀 Deployment
@@ -254,6 +265,11 @@ python app.py
 pip install gunicorn
 gunicorn -w 4 -b 0.0.0.0:5000 app:app
 ```
+
+### AWS EC2 + DynamoDB + SNS
+For complete production deployment on EC2 with DynamoDB persistence and SNS notifications, follow:
+
+`DEPLOY_AWS_EC2_DYNAMODB_SNS.md`
 
 ### Docker Deployment
 Create a `Dockerfile`:
@@ -279,10 +295,6 @@ Contributions are welcome! To contribute:
 5. Open a Pull Request
 
 ---
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
